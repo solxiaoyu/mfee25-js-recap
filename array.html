@@ -84,6 +84,13 @@
 
         animal.splice(3 , 0, {id: 'a35', en: 'pig', cn: '豬', num: 3, size: 'medium'}) ;
 
+        let final = animal.find((value, index) => {
+            return value.num < 10
+
+        })
+
+        console.log(final);
+
         
 
 
