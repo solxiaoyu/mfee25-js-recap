@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+      
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+        // 創建一個array.html
+        // 在array.html的script裡
+        // 在剛剛的動物陣列範例中，
+        // 用迭代陣列方法跟展開運算子在每個物件中加上新的屬性size，且value為 ‘small’
+        // 結果如右:
+
+        let animals = [
+            {id: 'a1', en: 'cat', cn: '貓', num: 30},
+            {id: 'a2', en: 'dog', cn: '狗', num: 30},
+            {id: 'a3', en: 'rebbit', cn: '兔', num: 30},
+            {id: 'a4', en: 'bear', cn: '熊', num: 30},
+            {id: 'a5', en: 'mouse', cn: '鼠', num: 30},
+        ]
+        // console.log(animals);
+
+       
+        // let seperateAnimals = animals.map((value, index) => {
+        //     return value
+        // })
+        // // console.log(seperateAnimals[1]);
+
+
+        // for(let i = 0; i <= seperateAnimals.length; i++){
+        //     let empty = []
+        //     empty["size"] = "small";
+        //     // console.log(seperateAnimals[i]);
+
+        //     var newArray = [...seperateAnimals[i], ...empty]
+        //     console.log(newArray);
+
+        // }
+        // console.log(newArray);
+
+
+
+        let animal = animals.map((value, index) => {
+            let size = "small"
+            let aniOpen = {...value, size}
+            // console.log(aniOpen)
+            return aniOpen
+        })
+        console.log(animal);
+
+
+
+        
+        // 找到熊，將其size改為 ‘large’
+        // 用展開運算子在index = 2的資料後面新增一筆資料
+        // 內容如下:
+        // 找到此時數量<10的第一個動物，印出它的中文名稱
+        // 上傳Github
+
+        let newAni = {id: 'a35', en: 'pig', cn: '豬', num: 3, size: 'medium'};
+
+        let aniBear = animal.filter((value, index) => {
+            if(value.id == 'a4'){
+                // console.log(value);
+                value["size"] = "large";
+                console.log(value);
+            }
+
+        })
+
+
+        
+
+        
+        
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
