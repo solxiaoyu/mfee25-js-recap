@@ -16,14 +16,15 @@
 
 
 
-let handleAge = (age) => {
-    if(age > 18){
-        return("成人");
-    }else if(age < 18 && age > 12){
-        return("少年");
-    }else{
-        return("兒童");
-    }
-}
+// let handleAge = (age) => {
+//     if(age > 18){
+//         return("成人");
+//     }else if(age < 18 && age > 12){
+//         return("少年");
+//     }else{
+//         return("兒童");
+//     }
+// }
 
-console.log(handleAge(20));
+// console.log(handleAge(20));
+

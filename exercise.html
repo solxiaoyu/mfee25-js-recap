@@ -32,17 +32,17 @@
         // 上傳Github
 
 
-        let handleAge = (age) => {
-            if (age > 18) {
-                return ("成人");
-            } else if (age < 18 && age > 12) {
-                return ("少年");
-            } else {
-                return ("兒童");
-            }
-        }
+        // let handleAge = (age) => {
+        //     if (age > 18) {
+        //         return ("成人");
+        //     } else if (age < 18 && age > 12) {
+        //         return ("少年");
+        //     } else {
+        //         return ("兒童");
+        //     }
+        // }
 
-        console.log(handleAge(20));
+        // console.log(handleAge(20));
 
 
 
@@ -52,18 +52,78 @@
         // 使用IIFE，引數請維持本來的 “pink”
         // 上傳Github
 
-        let color = "pink";
-        let correctColor = (colors => {
-            if(colors == color){
-                console.log("粉紅色");
-            }else{
-                console.log("其他顏色");
-            }
-        })("pink");
+        // let color = "pink";
+        // let correctColor = (colors => {
+        //     if(colors == color){
+        //         console.log("粉紅色");
+        //     }else{
+        //         console.log("其他顏色");
+        //     }
+        // })("pink");
 
-        console.log(correctColor);
+        // console.log(correctColor);
 
+
+
+
+
+        // 在function.html的script裡
+        // 用箭頭函式寫出一個叫做 “fibonacciGenerator” 的function
+        // 費氏數列長這樣: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987…
+        // 第3個數開始，後面的每一個數字為前兩個數字的總和
+        // 請用迴圈寫出費氏數列，最後return的結果會是一個array
+        // 印出參數為20的結果
+        // 上傳Github
+
+
+        // let result = [];
+
+        // function fibonacciGenerator(parameter) {
+        //     for(let j = 0; j < parameter; j++){
+        //         console.log(j);
+        //     }
+        // }
+
+        // fibonacciGenerator(10);
+
+
+
+
+        // -----------------------------------------------------------
         
+        
+        // let fibonacciGenerator = (parameter) => {
+        //     let result = [0, 1];
+        //     for (let j = 2; j <= parameter; j++) {
+        //         // result.push(j)
+
+        //         result = result[ j - 2] + result[j - 1]  
+                
+        //         // 放在此為梯形陣列
+        //         // console.log(result);
+
+        //     }
+        //     // 陣列
+        //     // console.log(result[1]);
+           
+        // }
+
+        // fibonacciGenerator(10);
+
+
+
+        // let fibonacciGenerator = (parameter) => {
+        //     let result = [0];
+        //     for (let j = 1; j <= parameter-1; j++) {
+        //         if
+                
+           
+        // }
+
+        // fibonacciGenerator(10);
+
+
+
 
 
 
